@@ -23,12 +23,12 @@ public class Flashlight : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0,0,rotationZ);
         
-        flashlight();
+        TurnFlashlight();
     
     }
 
 
-    void flashlight()
+    private void TurnFlashlight()
     {
         if (lightTurn == true)
         {

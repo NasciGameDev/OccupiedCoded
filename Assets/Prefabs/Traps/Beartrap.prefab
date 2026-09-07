@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3942979127050845141}
   - component: {fileID: 7025647585926158498}
   - component: {fileID: 8091917132206351757}
+  - component: {fileID: 409094009744869461}
   m_Layer: 0
   m_Name: Beartrap
   m_TagString: Untagged
@@ -58,7 +59,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f515de0cae839f54aa6fba9f63b48870, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,11 +146,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229716850304897250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ab78078efcbcb409f364062c5533a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c38ef48ec132ce45a17484283ee3c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  audioClip: {fileID: 8300000, guid: 2f3994439b800f647953e83a2dfbca80, type: 3}
+  audioClip: {fileID: 8300000, guid: 29781ebe8a07cbd46a10e1a196ba1636, type: 3}
+  trapId: Beartrap
+--- !u!114 &409094009744869461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229716850304897250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16fb23603dc269841ae7f67849e615d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shineMaterial: {fileID: 0}
 --- !u!1 &2883944198520549074
 GameObject:
   m_ObjectHideFlags: 0

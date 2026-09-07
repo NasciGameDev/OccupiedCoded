@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 1776729223465092686}
   - component: {fileID: 3826166808209425753}
   - component: {fileID: 8640476851494619247}
+  - component: {fileID: 6915169102912374316}
   m_Layer: 0
   m_Name: Chandelier
   m_TagString: Untagged
@@ -184,7 +185,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f515de0cae839f54aa6fba9f63b48870, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -304,3 +305,17 @@ MonoBehaviour:
   damage: 1
   audioClip: {fileID: 8300000, guid: 2f4a33e0cab9eee4d83796d2c07579a3, type: 3}
   audioClipHitting: {fileID: 8300000, guid: 126d54a7d1020714ab244dd46e512d65, type: 3}
+  trapId: Chandelier
+--- !u!114 &6915169102912374316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473018393703847905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16fb23603dc269841ae7f67849e615d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shineMaterial: {fileID: 0}
