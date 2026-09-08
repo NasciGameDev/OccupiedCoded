@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
 
     
-
+    private bool isMovementDeactivated;
     private float jumpTimer;
     private Rigidbody2D    rb;
     private string         horizontalAxisName = "Horizontal";
@@ -75,11 +75,19 @@ public class Player : MonoBehaviour
 
         transform.position = checkpointManager.LastCheckpointPosition();
 
+        ActivateMovement();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (isMovementDeactivated)
+        {
+            rb.linearVelocity = Vector2.zero;
+            transform.rotation = Quaternion.identity;
+            return;
+        }
         ComputeGrounded();
 
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -233,4 +241,10 @@ public class Player : MonoBehaviour
             Physics2D.IgnoreCollision(playerCollider, enemyCollider, false);
         }
     }
+
+    public void DeactivateMovement() => isMovementDeactivated = true;
+    public void ActivateMovement() => isMovementDeactivated = false;
+
+
+
 }

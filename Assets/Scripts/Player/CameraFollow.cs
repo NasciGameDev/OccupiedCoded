@@ -10,14 +10,13 @@ public class CameraFollow : MonoBehaviour
     Vector3 offset;
     
     private Transform playerTransform;
-    void Start()
-    {
-        
-    }
+    private bool isMovementDeactivated = false;
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(isMovementDeactivated) return;
+
         if (playerTransform == null)
         {
             Player player = FindFirstObjectByType<Player>();
@@ -40,4 +39,7 @@ public class CameraFollow : MonoBehaviour
             transform.position = targetPos;
         }
     }
+
+    public void DeactivateMovement() => isMovementDeactivated = true;
+    public void ActivateMovement() => isMovementDeactivated = false;
 }
