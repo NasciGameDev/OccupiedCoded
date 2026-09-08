@@ -1,3 +1,4 @@
+using MoreMountains.Feedbacks;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -6,6 +7,9 @@ public class Flashlight : MonoBehaviour
 
     private Rigidbody2D rb;
     [SerializeField] private Camera mainCamera;
+
+    [SerializeField] MMF_Player feedback;
+
     private bool lightTurn = true;
     private void Start()
     {
@@ -44,6 +48,7 @@ public class Flashlight : MonoBehaviour
                 light.GetComponent<Light2D>().enabled = false;
 
                 lightTurn = false;
+                feedback.PlayFeedbacks();
                 Debug.Log("Turned On");
             }
         }
@@ -62,6 +67,8 @@ public class Flashlight : MonoBehaviour
 
                 lightTurn = true;
                 //Debug.Log("Turned Off");
+
+                feedback.PlayFeedbacks();
             }
         }
     }

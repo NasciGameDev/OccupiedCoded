@@ -227,7 +227,7 @@ Material:
     - _ShineGlow: 1
     - _ShineLocation: 0
     - _ShineRotate: 0
-    - _ShineWidth: 0.107
+    - _ShineWidth: 0.093
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -282,7 +282,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _OverlayTex_ScaleAndTiling: {r: 1, g: 1, b: 0, a: 0}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShineColor: {r: 0.9622642, g: 0.5791741, b: 0.5791741, a: 1}
+    - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpriteFlip: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
