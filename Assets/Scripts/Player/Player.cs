@@ -85,6 +85,7 @@ public class Player : MonoBehaviour
         if (isMovementDeactivated)
         {
             rb.linearVelocity = Vector2.zero;
+            currentVelocity = Vector3.zero;
             transform.rotation = Quaternion.identity;
             return;
         }
